@@ -1,0 +1,3 @@
+fn gstr_starts_with(s, prefix) { var i; var n; n = strlen(prefix); i = 0; while (i < n) { if (lb(s + i) != lb(prefix + i)) { return 0; } i = i + 1; } return 1; }
+fn gstr_count_char(s, ch) { var i; var n; var count; n = strlen(s); i = 0; count = 0; while (i < n) { if (lb(s + i) == ch) { count = count + 1; } i = i + 1; } return count; }
+fn gstr_is_empty(s) { if (strlen(s) == 0) { return 1; } return 0; }
