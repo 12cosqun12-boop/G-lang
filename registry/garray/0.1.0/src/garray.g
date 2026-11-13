@@ -1,0 +1,4 @@
+fn garray_sum(p, n) { var i; var s; i = 0; s = 0; while (i < n) { s = s + lq(p + i * 8); i = i + 1; } return s; }
+fn garray_max(p, n) { var i; var m; if (n <= 0) { return 0; } m = lq(p); i = 1; while (i < n) { if (lq(p + i * 8) > m) { m = lq(p + i * 8); } i = i + 1; } return m; }
+fn garray_min(p, n) { var i; var m; if (n <= 0) { return 0; } m = lq(p); i = 1; while (i < n) { if (lq(p + i * 8) < m) { m = lq(p + i * 8); } i = i + 1; } return m; }
+fn garray_reverse(p, n) { var i; var j; var a; var b; i = 0; j = n - 1; while (i < j) { a = lq(p + i * 8); b = lq(p + j * 8); sq(p + i * 8, b); sq(p + j * 8, a); i = i + 1; j = j - 1; } return 0; }
