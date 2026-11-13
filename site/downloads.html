@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Download G — Gate</title><meta name="description" content="Download the G programming language compiler for Windows and Linux.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="gate-mark">G</span><span>Gate</span></a>
+<nav><a href="index.html">Explore</a><a class="active" href="downloads.html">Download G</a><a href="publish.html">Publish</a><a href="https://github.com/12cosqun12-boop/G-lang">GitHub</a></nav></header>
+<main>
+<section class="page-hero"><div class="eyebrow">G PROGRAMMING LANGUAGE</div><h1>Download G <span>1.1</span></h1>
+<p>Native x86-64 compiler, GTabe window layer and Gate package manager. No LLVM required.</p></section>
+<section class="download-grid">
+<article class="download-card"><div class="os-icon">⊞</div><div class="pill">x86-64</div><h2>Windows</h2>
+<p>PE32+ native compiler with GTabe via <code>user32.dll</code> and Gate CLI.</p>
+<a class="button primary full" href="downloads/G-1.1-Windows-x86_64-GTabe-Gate.zip" download>Download Windows ZIP</a>
+<pre><code>g.exe hello.g hello.exe
+.\hello.exe</code></pre></article>
+<article class="download-card"><div class="os-icon">⌁</div><div class="pill">x86-64</div><h2>Linux</h2>
+<p>Static ELF64 compiler with direct Linux syscalls, GTabe and Gate CLI.</p>
+<a class="button primary full" href="downloads/G-1.1-Linux-x86_64-GTabe-Gate.zip" download>Download Linux ZIP</a>
+<pre><code>chmod +x g
+./g hello.g hello
+./hello</code></pre></article>
+</section>
+<section class="feature-list">
+<div><b>Native output</b><span>PE32+ on Windows, ELF64 on Linux</span></div>
+<div><b>Self-hosted</b><span>GCM is written in G and reaches a fixed point</span></div>
+<div><b>GTabe</b><span>Cross-platform G window API</span></div>
+<div><b>Gate</b><span>Package discovery, install, build and publish workflow</span></div>
+</section>
+<section class="code-doc"><div><div class="eyebrow">FIRST PROGRAM</div><h2>Hello from G</h2></div>
+<pre><code>fn main() {
+    print("Hello from G\n");
+    return 0;
+}</code></pre></section>
+</main>
+<footer><b>Gate</b> · G 1.1 downloads · <a href="https://github.com/12cosqun12-boop/G-lang/releases">Releases</a></footer>
+</body></html>
