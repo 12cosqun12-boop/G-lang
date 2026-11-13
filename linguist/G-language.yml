@@ -1,0 +1,8 @@
+G:
+  type: programming
+  color: "#5C7CFA"
+  extensions:
+    - ".g"
+  tm_scope: source.glang
+  ace_mode: text
+  language_id: 987654321
