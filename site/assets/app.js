@@ -1,0 +1,10 @@
+const packages=[
+{name:'gtabe',version:'0.1.0',category:'ui',desc:'Cross-platform native window API for G. Windows user32 backend and Linux window backend.',downloads:128,updated:'today'},
+{name:'gmath',version:'0.1.0',category:'math',desc:'Small integer math helpers: abs, min, max, clamp, power and GCD.',downloads:74,updated:'today'},
+{name:'gstr',version:'0.1.0',category:'utility',desc:'String helpers for prefixes, character counting and simple text operations.',downloads:61,updated:'today'},
+{name:'gargs',version:'0.1.0',category:'utility',desc:'Command-line argument helpers built on G argc() and argv().',downloads:53,updated:'today'},
+{name:'garray',version:'0.1.0',category:'data',desc:'Integer-array helpers using native G pointers: sum, min, max and reverse.',downloads:47,updated:'today'}];
+const grid=document.querySelector('#packages'),search=document.querySelector('#search'),category=document.querySelector('#category'),empty=document.querySelector('#empty');
+function render(){const q=(search?.value||'').toLowerCase(),cat=category?.value||'all';const list=packages.filter(p=>(cat==='all'||p.category===cat)&&(`${p.name} ${p.desc}`.toLowerCase().includes(q)));grid.innerHTML=list.map(p=>`<article class="package-card"><div class="package-top"><div class="package-name">${p.name}</div><span class="version">v${p.version}</span></div><p>${p.desc}</p><div class="package-meta"><span>${p.category}</span><span>↓ ${p.downloads}</span><span>${p.updated}</span></div><div class="install"><b>$</b> gate add ${p.name}</div></article>`).join('');empty.hidden=list.length!==0;}
+function stats(){document.querySelector('#stats').innerHTML=[['5','packages'],['2','platforms'],['11/11','core tests'],['1.1','G release']].map(x=>`<div class="stat"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}
+search?.addEventListener('input',render);category?.addEventListener('change',render);document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement!==search){e.preventDefault();search.focus()}});stats();render();
