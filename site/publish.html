@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Publish — Gate</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="gate-mark">G</span><span>Gate</span></a>
+<nav><a href="index.html">Explore</a><a href="downloads.html">Download G</a><a class="active" href="publish.html">Publish</a><a href="https://github.com/12cosqun12-boop/G-lang">GitHub</a></nav></header>
+<main>
+<section class="page-hero compact"><div class="eyebrow">GATE PUBLISH</div><h1>Publish your <span>G package</span>.</h1><p>Create a Gate manifest and submit the project to the registry.</p></section>
+<section class="publish-layout">
+<form class="publish-form" id="publishForm">
+<label>Package name<input id="pkgName" required pattern="[a-z0-9-]+" placeholder="my-package"></label>
+<label>Version<input id="pkgVersion" required value="0.1.0"></label>
+<label>Description<textarea id="pkgDescription" required placeholder="What does your package do?"></textarea></label>
+<label>Repository URL<input id="pkgRepo" type="url" required placeholder="https://github.com/you/project"></label>
+<label>Category<select id="pkgCategory"><option>utility</option><option>ui</option><option>math</option><option>data</option></select></label>
+<div class="form-actions"><button class="button primary" type="submit">Create publish request</button><button class="button" type="button" id="downloadManifest">Download Gate.json</button></div>
+<p class="form-note">Gate's public registry is GitHub-backed. The publish button opens a pre-filled registry request in the G repository so packages can be reviewed before listing.</p>
+</form>
+<aside class="manifest-preview"><div class="eyebrow">GATE.JSON</div><pre><code id="manifest"></code></pre></aside>
+</section></main>
+<footer><b>Gate</b> · Publish packages for G</footer><script src="assets/publish.js"></script>
+</body></html>
