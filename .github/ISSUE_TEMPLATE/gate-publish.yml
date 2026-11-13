@@ -1,0 +1,54 @@
+name: Gate package publish
+description: Submit a G package to the Gate registry
+title: "[Gate Publish] "
+labels: ["gate-publish"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit a package for the Gate registry. Package names should use lowercase letters, numbers, and hyphens.
+  - type: input
+    id: name
+    attributes:
+      label: Package name
+      placeholder: my-package
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Repository URL
+      placeholder: https://github.com/user/project
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - utility
+        - ui
+        - math
+        - data
+    validations:
+      required: true
+  - type: textarea
+    id: manifest
+    attributes:
+      label: Gate.json
+      render: json
+    validations:
+      required: true
