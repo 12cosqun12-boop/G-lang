@@ -1,0 +1,7 @@
+[
+  {"name":"gtabe","version":"0.1.0","category":"ui","description":"Cross-platform native window API for G."},
+  {"name":"gmath","version":"0.1.0","category":"math","description":"Integer math helpers for G."},
+  {"name":"gstr","version":"0.1.0","category":"utility","description":"String helpers for G."},
+  {"name":"gargs","version":"0.1.0","category":"utility","description":"Command-line argument helpers for G."},
+  {"name":"garray","version":"0.1.0","category":"data","description":"Pointer-based integer array helpers for G."}
+]
