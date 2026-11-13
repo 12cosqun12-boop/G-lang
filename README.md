@@ -1,5 +1,11 @@
 # G Programming Language 1.0
 
+![Language](https://img.shields.io/badge/language-G-5C7CFA)
+![Windows](https://img.shields.io/badge/Windows-x86--64-0078D4)
+![Linux](https://img.shields.io/badge/Linux-x86--64-FCC624)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue)
+
+
 G is a small self-hosted native systems programming language with direct x86-64 executable generation.
 
 ## Platforms
@@ -107,6 +113,10 @@ G 1.0 focuses on native x86-64 command-line applications. The compiler includes 
 
 GUI libraries, additional CPU architectures and additional operating systems can be added in later versions.
 
+## GitHub language recognition
+
+G uses the `.g` extension. GitHub's Languages panel is powered by GitHub Linguist. G is a new language and is not yet in Linguist's global language registry, so GitHub may currently show only helper languages such as Shell or Batchfile. The repository includes Linguist metadata and a TextMate grammar under `linguist/` for future upstream submission.
+
 ## License
 
-No open-source license has been selected yet. Add a LICENSE file before public release if you want others to have explicit permission to modify and redistribute the project.
+G is released under the Apache License 2.0. See `LICENSE`.
