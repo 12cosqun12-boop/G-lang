@@ -1,0 +1,3 @@
+*.g linguist-detectable=true
+examples/** linguist-detectable=true
+tests/** linguist-detectable=true
