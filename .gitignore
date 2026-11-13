@@ -1,0 +1,6 @@
+build-linux/
+build-windows/
+*.actual
+g_tasks.txt
+.DS_Store
+Thumbs.db
